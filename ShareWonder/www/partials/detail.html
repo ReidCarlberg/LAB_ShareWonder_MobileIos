@@ -1,0 +1,49 @@
+
+<style>
+    .image {
+        position: relative;
+        width: 70%; /* for IE 6 */
+        z-index: 1;
+        float: left;
+        padding: 5px;
+    }
+    
+    .image p span {
+        position: absolute;
+        width: 70%;
+        bottom: 15px;
+        right: 5px;
+        font-size: 125%;
+        z-index: 100;
+        color: white;
+        letter-spacing: -1px;
+        background: rgb(0, 0, 0); /* fallback color */
+        background: rgba(0, 0, 0, 0.7);
+        padding: 10px; 
+    }
+</style>
+
+<div ng-show="!isWorking()">
+    <div class="image" ng-click="showDetail(summary.wonder.Id)">
+        <img src="{{instanceUrl}}/servlet/servlet.FileDownload?file={{summary.wonder.Primary_Image__c}}" />
+        <p><span>{{summary.wonder.Description__c}}</span></p>
+    </div>
+    <div style="padding: 5px;">
+    	<p><img src="{{summary.wonder.CreatedBy.SmallPhotoUrl}}" /><br/>
+    		{{summary.wonder.CreatedBy.Name}}</p>
+    </div>
+
+	<p><input id="myShortDescription" ng-model="description" maxlength="50"/><span class="btn" ng-click="doCommentOnDetail()" >Go</span>
+	</p>
+
+	<p ng-repeat="current in summary.feed">
+		<img src="{{current.photoUrl}}" alt="{{current.actor.name}}" />
+		{{current.body.text}}
+		
+	</p>
+
+</div>
+
+<div ng-show="isWorking()" >
+    <p align="center"><img src="workingWonderTree.gif" /></p>
+</div>

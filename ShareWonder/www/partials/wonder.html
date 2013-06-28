@@ -1,0 +1,34 @@
+<style>
+    .image {
+        position: relative;
+        width: 45%; /* for IE 6 */
+        z-index: 1;
+        float: left;
+        padding: 5px;
+    }
+    
+    .image p span {
+        position: absolute;
+        width: 70%;
+        bottom: 15px;
+        right: 5px;
+        z-index: 100;
+        color: white;
+        letter-spacing: -1px;
+        background: rgb(0, 0, 0); /* fallback color */
+        background: rgba(0, 0, 0, 0.7);
+        padding: 10px; 
+    }
+</style>
+
+<div ng-show="hasErrorMessage()">
+    <p>{{errorMessage}}</p>
+</div>
+
+<div  ng-repeat="current in records">
+    <div class="image" ng-click="showDetail(current.Id)">
+        <img src="{{instanceUrl}}/servlet/servlet.FileDownload?file={{current.Primary_Image__c}}" />
+        <p><span>{{current.Description__c}}</span></p>
+    </div>
+</div>
+

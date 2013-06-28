@@ -1,0 +1,50 @@
+<style>
+    #image {
+        position: relative;
+        width: 90%; /* for IE 6 */
+        z-index: 1;
+        float: left;
+        padding: 5px;
+    }
+    
+    .image p span {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        z-index: 100;
+        color: white;
+        letter-spacing: -1px;
+        background: rgb(0, 0, 0); /* fallback color */
+        background: rgba(0, 0, 0, 0.7);
+        padding: 10px; 
+    }
+</style>
+<div ng-show="!isWorking()">
+
+	<div ng-show="!hasPicture()">
+		<p align="center"><img src="takeYourBestShot.png" ng-click="doPictureCamera()" /></p>
+		    
+		<p class="btn" style="width: 90%" ng-show="!hasPicture()" ng-click="doPictureLibrary()">Or Select An Existing One</p>
+	</div>
+	<div ng-show="hasPicture()">
+		<div class=".image">
+
+			<p><input id="myShortDescription" ng-model="description" maxlength="30" focus="true" /><span class="btn" ng-click="doReportTheWasteCombined()" >Go</span>
+			</p>
+
+			<p><img id="myImage" /></p>
+
+
+
+			
+		</div>
+	</div>
+</div>
+<div ng-show="isWorking()" >
+    <p align="center"><img src="workingWonderTree.gif" /></p>
+</div>
+<div ng-show="hasError()" >
+    <p>An error occurred while posting your wonderful image.</p>
+    <p>{{errorText}}</p>
+</div>
+
