@@ -6,4 +6,4 @@ https://github.com/ReidCarlberg/LAB_ShareWonder
 Here's a demo Video.
 http://www.youtube.com/watch?v=ZneUZzuq7fc&feature=youtu.be
 
-!(https://raw.github.com/ReidCarlberg/LAB_ShareWonder_MobileIos/master/ShareWonder_Splash.png)
+![Test](https://raw.github.com/ReidCarlberg/LAB_ShareWonder_MobileIos/master/ShareWonder_Splash.png)
