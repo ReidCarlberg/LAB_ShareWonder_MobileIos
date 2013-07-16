@@ -304,8 +304,7 @@
 				824AA0DF17251CDE00C9BD79 /* Plugins */,
 				824AA0951725140400C9BD79 /* Supporting Files */,
 			);
-			name = ShareWonder;
-			path = "See The Waste";
+			path = ShareWonder;
 			sourceTree = "<group>";
 		};
 		824AA0951725140400C9BD79 /* Supporting Files */ = {
@@ -788,17 +787,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "See The Waste/ShareWonder-Prefix.pch";
-				INFOPLIST_FILE = "See The Waste/ShareWonder-Info.plist";
+				GCC_PREFIX_HEADER = "ShareWonder/ShareWonder-Prefix.pch";
+				INFOPLIST_FILE = "ShareWonder/ShareWonder-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/See The Waste/Dependencies/Cordova\"",
-					"\"$(SRCROOT)/See The Waste/Dependencies/openssl\"",
-					"\"$(SRCROOT)/See The Waste/Dependencies/SalesforceCommonUtils/Libraries\"",
-					"\"$(SRCROOT)/See The Waste/Dependencies/SalesforceHybridSDK\"",
-					"\"$(SRCROOT)/See The Waste/Dependencies/SalesforceOAuth\"",
-					"\"$(SRCROOT)/See The Waste/Dependencies/SalesforceSDKCore\"",
-					"\"$(SRCROOT)/See The Waste/Dependencies/sqlcipher\"",
+					"\"$(SRCROOT)/ShareWonder/Dependencies/Cordova\"",
+					"\"$(SRCROOT)/ShareWonder/Dependencies/openssl\"",
+					"\"$(SRCROOT)/ShareWonder/Dependencies/SalesforceCommonUtils/Libraries\"",
+					"\"$(SRCROOT)/ShareWonder/Dependencies/SalesforceHybridSDK\"",
+					"\"$(SRCROOT)/ShareWonder/Dependencies/SalesforceOAuth\"",
+					"\"$(SRCROOT)/ShareWonder/Dependencies/SalesforceSDKCore\"",
+					"\"$(SRCROOT)/ShareWonder/Dependencies/sqlcipher\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -813,17 +812,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "See The Waste/ShareWonder-Prefix.pch";
-				INFOPLIST_FILE = "See The Waste/ShareWonder-Info.plist";
+				GCC_PREFIX_HEADER = "ShareWonder/ShareWonder-Prefix.pch";
+				INFOPLIST_FILE = "ShareWonder/ShareWonder-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/See The Waste/Dependencies/Cordova\"",
-					"\"$(SRCROOT)/See The Waste/Dependencies/openssl\"",
-					"\"$(SRCROOT)/See The Waste/Dependencies/SalesforceCommonUtils/Libraries\"",
-					"\"$(SRCROOT)/See The Waste/Dependencies/SalesforceHybridSDK\"",
-					"\"$(SRCROOT)/See The Waste/Dependencies/SalesforceOAuth\"",
-					"\"$(SRCROOT)/See The Waste/Dependencies/SalesforceSDKCore\"",
-					"\"$(SRCROOT)/See The Waste/Dependencies/sqlcipher\"",
+					"\"$(SRCROOT)/ShareWonder/Dependencies/Cordova\"",
+					"\"$(SRCROOT)/ShareWonder/Dependencies/openssl\"",
+					"\"$(SRCROOT)/ShareWonder/Dependencies/SalesforceCommonUtils/Libraries\"",
+					"\"$(SRCROOT)/ShareWonder/Dependencies/SalesforceHybridSDK\"",
+					"\"$(SRCROOT)/ShareWonder/Dependencies/SalesforceOAuth\"",
+					"\"$(SRCROOT)/ShareWonder/Dependencies/SalesforceSDKCore\"",
+					"\"$(SRCROOT)/ShareWonder/Dependencies/sqlcipher\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
