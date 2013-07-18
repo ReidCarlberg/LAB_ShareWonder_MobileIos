@@ -1,0 +1,48 @@
+        body {
+            #padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+            background-color: #f5f4f0;
+        }
+        
+        .button {
+            text-align: center;
+        }
+
+        .navbar-inverse-salmon {
+          background-color: #fb704f;
+          background-image: -moz-linear-gradient(top, #222222, #111111);
+          background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
+          background-image: -webkit-linear-gradient(top, #222222, #111111);
+          background-image: -o-linear-gradient(top, #222222, #111111);
+          background-image: linear-gradient(to bottom, #222222, #111111);
+          background-repeat: repeat-x;
+          border-color: #fb7c61;
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
+            }
+
+            .navbar-inner-salmon {
+              min-height: 40px;
+              padding-right: 20px;
+              padding-left: 20px;
+              background-color: #fb704f;
+              background-image: -moz-linear-gradient(top, #fb7c61, #fb704f);
+              background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fb704f), to(#f2f2f2));
+              background-image: -webkit-linear-gradient(top, #fb7c61, #fb704f);
+              background-image: -o-linear-gradient(top, #fb7c61, #fb704f);
+              background-image: linear-gradient(to bottom, #fb7c61, #fb704f);
+              background-repeat: repeat-x;
+              border: 1px solid #fb7c61;
+              x-webkit-border-radius: 4px;
+                 x-moz-border-radius: 4px;
+                      xborder-radius: 4px;
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+              *zoom: 1;
+              z-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+                 z-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+                      zbox-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+            }    
+
+.navbar-inverse-salmon .brand
+ {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}             

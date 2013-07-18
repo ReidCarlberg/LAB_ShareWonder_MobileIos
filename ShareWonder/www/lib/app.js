@@ -240,7 +240,7 @@ angular.module('SeeTheWonder').controller('CameraCtrl', ['$scope', '$location','
                                                         
             $scope.doPicture = function() {
                 var options = {
-                    quality: 25,
+                    quality: 10,
                     correctOrientation: true,
                     // Very useful for debugging in the emulator!
                     sourceType: $scope.imagesource,

@@ -27,7 +27,7 @@
 
 <div  ng-repeat="current in records">
     <div class="image" ng-click="showDetail(current.Id)">
-        <img src="{{instanceUrl}}/servlet/servlet.FileDownload?file={{current.Primary_Image__c}}" />
+        <img width="125" height="166" src="{{instanceUrl}}/servlet/servlet.FileDownload?file={{current.Primary_Image__c}}" />
         <p><span>{{current.Description__c}}</span></p>
     </div>
 </div>
